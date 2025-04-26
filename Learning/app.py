@@ -16,3 +16,8 @@ diametro = st.number_input('Qual o diâmetro da pizza?')
 if diametro:
     preco = modelo.predict([[diametro]])[0][0]
     st.write(f'O preço da pizza de {diametro} cm é R$ {preco:.2f}!')
+
+# Como rodar o app:
+# No terminal, navegue até o diretório onde está o arquivo app.py e execute:
+# streamlit run app.py
+# Isso abrirá uma nova aba no seu navegador com o aplicativo Streamlit rodando.
